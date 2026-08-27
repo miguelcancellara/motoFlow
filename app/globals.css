@@ -1,2 +1,114 @@
 /* Aqui ficam estilos que valem para todo o sistema.
 Exemplo: fonte, cores, espaçamento */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #1E63FF;
+    --cor-secundaria: #061B49;
+    --cor-terciaria: #FFFFFF;
+    --cor-quaternaria: #F5F7FA;
+    --cor-quinquagenaria: #4B5563;
+    --cor-verde: #10B981;
+    --cor-laranja: #F59E0B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-terciaria);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--cor-secundaria);
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.2s;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* =========================================NavBar========================================= */
+.navBar {
+    background-color: var(--cor-secundaria);
+    padding: 20px 0;
+}
+
+.btn-entrar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 12px 22px;
+    margin-right: 10px;
+}
+
+.btn-cadastrar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+/* =========================================MainHero========================================= */
+.mainHeroSection {
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+.mainHeroText {
+    margin-top: 10px;
+}
+
+.h1-mainHero {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.p-mainHero {
+    color: var(--cor-quinquagenaria);
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+.btn-mainHero {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 12px 22px;
+    margin-top: 20px;
+}
+
+.mainHeroPhoto img {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
+}
